@@ -1,0 +1,4 @@
+# Never upload secrets
+.env
+*.env
+.env.*
