@@ -28,8 +28,7 @@ Email addresses
 Phone numbers
 ID numbers
 Credit card numbers
-
 Dates
-
 This prevents leaking sensitive user information to the LLM.
+
 
