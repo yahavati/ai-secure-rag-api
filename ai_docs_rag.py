@@ -65,8 +65,9 @@ def ask_ai(username: str, question: str):
         model="gpt-4o-mini",
         messages=[
             {
-                "role": "system",
-                "content": "You are a RAG assistant. Answer ONLY using the provided documentation."
+                "role": "system", 
+                "content": "Answer ONLY based on the document context and NEVER reveal any personal data (PII)."
+
             },
             {
                 "role": "assistant",
