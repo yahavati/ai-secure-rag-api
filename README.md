@@ -1,16 +1,7 @@
-This project is an AI-powered Document Question-Answering System built with:
-FastAPI (backend API framework)
-JWT Authentication (secure access control)
-ChromaDB (vector database for document embeddings)
-OpenAI Embeddings (text-embedding-3-small)
-GPT-4o-mini for context-based answers
-RAG (Retrieval-Augmented Generation) architecture
-Full support for PDF, Word, and TXT documents
-Automatic PII Masking to remove sensitive data before processing
-Users can upload documents, securely store them, and then ask questions.
-The system retrieves the most relevant document based on semantic similarity and produces an answer strictly based on the retrieved content.
+This project is an AI-powered Document Question-Answering system that uses a FastAPI backend combined with JWT-based authentication to ensure secure user access. Uploaded documents (PDF, Word, or TXT) are processed and converted into clean text, followed by automatic PII masking to remove sensitive information. The cleaned text is embedded using OpenAI’s text-embedding-3-small model and stored in ChromaDB, a vector database that enables efficient semantic search. When a user submits a question, the system performs Retrieval-Augmented Generation (RAG) by semantically matching the question to the user’s own documents, retrieving the most relevant content, and generating an answer using GPT-4o-mini strictly based on the retrieved context
 
 Features:
+
 Secure Authentication:
 JWT-based login
 Tokens store: username, user ID, role, expiration
@@ -41,3 +32,4 @@ Credit card numbers
 Dates
 
 This prevents leaking sensitive user information to the LLM.
+
